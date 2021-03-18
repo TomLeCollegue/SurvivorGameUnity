@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class BreathingProgressBar : MonoBehaviour
 {
-    public Image image;
+    public Slider slider;
     
     // Update is called once per frame
     void Update()
     {
-        image.fillAmount = ControlState.levelOfBreathing / 100;
+        slider.value = DataPlayer.singleton.BreathingProgress/ 100;
     }
 }

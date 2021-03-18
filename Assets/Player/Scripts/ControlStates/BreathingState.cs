@@ -23,7 +23,7 @@ public class BreathingState : ControlState
         
         changeBreatheLevel(+15);
 
-        if (levelOfBreathing > 100)
+        if (DataPlayer.singleton.BreathingProgress> 100)
         {
             controlManager.controlState = new NormalControlState(animator, velocityYHash, velocityXHash, controlManager);
         }

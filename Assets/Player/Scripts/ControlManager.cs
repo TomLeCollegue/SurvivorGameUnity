@@ -18,9 +18,6 @@ public class ControlManager : MonoBehaviour
     float gravity = 0f;
     float xRotation = 0f;
 
-
-    public float level;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +34,6 @@ public class ControlManager : MonoBehaviour
         handleRotation();
         handleGravity();
         controlState.handleMovement();
-        level = ControlState.levelOfBreathing;
     }
 
 

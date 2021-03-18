@@ -28,7 +28,7 @@ public class NormalControlState : ControlState
 
             changeBreatheLevel(-15);
         }
-        else if(levelOfBreathing < 100)
+        else if(DataPlayer.singleton.BreathingProgress < 100)
         {
             changeBreatheLevel(+20);
         }
@@ -36,7 +36,7 @@ public class NormalControlState : ControlState
         animator.SetFloat(velocityYHash, velocityY);
         animator.SetFloat(velocityXHash, velocityX);
         
-        if(levelOfBreathing < 0)
+        if(DataPlayer.singleton.BreathingProgress < 0)
         {
             controlManager.controlState = new BreathingState(animator, velocityYHash, velocityXHash, controlManager);
         }

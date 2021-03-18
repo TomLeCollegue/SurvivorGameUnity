@@ -9,13 +9,12 @@ public abstract class ControlState
     protected int velocityXHash;
     protected int velocityYHash;
     protected ControlManager controlManager;
-    public static float levelOfBreathing = 100;
 
     public abstract void handleMovement();
 
     public void changeBreatheLevel(float value)
     {
-        levelOfBreathing += value * Time.deltaTime;
+        DataPlayer.singleton.BreathingProgress += value * Time.deltaTime;
     }
 
 }
