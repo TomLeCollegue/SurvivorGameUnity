@@ -19,7 +19,6 @@ public class NormalControlState : ControlState
         float velocityX = Input.GetAxis("Horizontal");
         float velocityY = Input.GetAxis("Vertical");
         bool runPressed = Input.GetButton("LB") | Input.GetKey(KeyCode.LeftShift);
-        Debug.Log(runPressed);
 
         if (runPressed && (velocityY!=0))
         {
