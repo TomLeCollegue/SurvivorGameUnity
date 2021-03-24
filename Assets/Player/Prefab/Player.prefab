@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3088211779671060812}
   - component: {fileID: 8367518933850031187}
   - component: {fileID: 1363851998176525311}
+  - component: {fileID: 1251787933282928558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -137,6 +138,19 @@ MonoBehaviour:
   meat: {fileID: 1739683412249667664}
   temp: {fileID: 1302085151705427646}
   health: {fileID: 6751125437169673824}
+--- !u!114 &1251787933282928558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48255218721260930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20dfb653c986814aa070e34e5ff5567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temperaturePlayer: 30
 --- !u!1 &145356493418762662
 GameObject:
   m_ObjectHideFlags: 0
