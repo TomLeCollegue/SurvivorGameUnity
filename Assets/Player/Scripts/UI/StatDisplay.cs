@@ -13,7 +13,7 @@ public class StatDisplay : MonoBehaviour
     void Update()
     {
         meat.text = (DataPlayer.singleton.eat/10).ToString("0") ;
-        temp.text = (DataPlayer.singleton.warm/10).ToString("0");
+        temp.text = (DataPlayer.singleton.temperatureFeeling/10).ToString("0");
         health.text = (DataPlayer.singleton.health /10).ToString("0");
     }
 }

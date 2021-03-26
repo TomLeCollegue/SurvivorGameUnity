@@ -39,7 +39,7 @@ public class TemperatureManager : MonoBehaviour
         {
             temperaturePlayer = CalculTemp();
         }
-        DataPlayer.singleton.warm = temperaturePlayer * 4;
+        DataPlayer.singleton.temperatureFeeling = temperaturePlayer * 4;
     }
 
 
